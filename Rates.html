@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body onload=dater()>
+    <div class= 'dateWord'>Currency rates for <span class="date"></span></div>
+    <section>
+            <h2 id="read" class="head">CURRENCY RATES</h2>
+            
+        <form id="form">
+            <input id="money" autocomplete="off" placeholder="base" class="input"><br>
+            <input id="currency" autocomplete="off" 
+            placeholder="Currency" class="input">
+            <br>
+            <input type="submit" value="Get Exchange Rate" class="input">
+        </form> 
+        <br>
+        <div class="result placer"></div>
+    </section>
+    <section>
+        <div class="head"><h2>For All The Currencies</h2></div>
+        <div class="head note">Default base Currency is the Euro (Eur)</div>
+        <form id="former" >
+            <input id="exchange" autocomplete="off" placeholder="base" class="input">
+            
+            <br> 
+            <input type="submit" value="Get All Exchange Rate" id="insert" class="input">
+        </form> 
+        <br>
+        <div class="resulter resulter1 placer"></div>
+        <div class="result"></div>
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

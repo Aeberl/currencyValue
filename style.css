@@ -1,0 +1,49 @@
+body {
+    background-color: #ebebeb;
+    /* background-image: url('stock1.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.dateWord{
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.date{
+    font-size: 20px;
+    font-weight: 500;
+}
+.input{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+form{
+    text-align: center;
+}
+.placer{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 15px;
+    padding: 10px;
+}
+.head{
+    text-align: center;
+}
+.note{
+    font-style: italic;
+    mar
+}
+table, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 100%;
+}
+table>td{
+    color: antiquewhite;
+}
