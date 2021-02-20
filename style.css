@@ -36,13 +36,18 @@ form{
 }
 .note{
     font-style: italic;
-    mar
 }
 table, th, td{
     border: 1px solid black;
+    
 }
 table{
     width: 100%;
+    border-collapse: collapse;
+    align-items: center;
+}
+td, th{
+    padding: 10px;
 }
 table>td{
     color: antiquewhite;
