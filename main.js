@@ -75,7 +75,12 @@ document.querySelector('#form').onsubmit = () => {
 document.querySelector('#former').onsubmit = () => {
     const exchange = document.querySelector('#exchange').value.toUpperCase();
     fetch(`https://api.exchangeratesapi.io/latest?base=${exchange}`)
-    .then(response => response.json())
+    .then(response => {
+        if (response.ok) {
+           return response.json()
+        } 
+        return Promise.reject(response)
+    })
     .then(data => {
         createCurrencyTable()
         for (let key in data){
