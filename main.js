@@ -48,7 +48,7 @@ const appendCurrency = (currencyParam, valueParam) => {
 }
 
 function dater(){
-    fetch(`https://api.exchangeratesapi.io/latest`)
+    fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=631ade75257d52d214a96793c8f5447e`)
     .then(response => response.json())
     .then(data => {
         console.log(data.date)
@@ -59,7 +59,7 @@ function dater(){
 document.querySelector('#form').onsubmit = () => {
     const currency = document.querySelector('#currency').value.toUpperCase();
     const money = document.querySelector('#money').value.toUpperCase();
-    fetch(`https://api.exchangeratesapi.io/latest?base=${money}&symbols=${currency}`)
+    fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=631ade75257d52d214a96793c8f5447e&base=${money}&symbols=${currency}`)
     .then(response => response.json())
     .then(data => {
         const contents = `1 ${money} = ${data.rates[currency].toFixed(2)} ${currency}`
@@ -74,7 +74,7 @@ document.querySelector('#form').onsubmit = () => {
 
 document.querySelector('#former').onsubmit = () => {
     const exchange = document.querySelector('#exchange').value.toUpperCase();
-    fetch(`https://api.exchangeratesapi.io/latest?base=${exchange}`)
+    fetch(`http://api.exchangeratesapi.io/v1/latest?access_key=631ade75257d52d214a96793c8f5447e&base=${exchange}`)
     .then(response => {
         if (response.ok) {
            return response.json()
